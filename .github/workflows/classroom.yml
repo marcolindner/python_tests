@@ -11,4 +11,7 @@
             run: |
               pip install pytest
           - uses: actions/checkout@v2
+          - name: Install Dependencies
+            run: |
+              pip install -t dependencies -r requirements.txt
           - uses: education/autograding@v1
